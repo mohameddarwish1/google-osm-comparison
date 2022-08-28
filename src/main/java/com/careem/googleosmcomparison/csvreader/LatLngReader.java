@@ -21,7 +21,7 @@ public class LatLngReader {
 			
 			try {
 				// parsing a CSV file into BufferedReader class constructor
-				BufferedReader br = new BufferedReader(new FileReader("/Users/mohamed.darwish/Downloads/comparison/google-osm-comparison/latlong.csv"));
+				BufferedReader br = new BufferedReader(new FileReader("latlong.csv"));
 				while ((line = br.readLine()) != null) // returns a Boolean value
 				{
 					String[] latLong = line.split(splitBy); // use comma as separator
